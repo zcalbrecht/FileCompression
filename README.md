@@ -86,3 +86,8 @@ To run the maven tests, use ```mvn test```
 - Decompress a single compressed archive: ```java Deschubs archivename.zl```
 - Decompress multiple compressed archive: ```java Deschubs archive1.zl archive2.zl```
 - Decompress all LZW-compressed archives in a given directory: ```java Deschubs *.zl```
+
+## Other Information
+
+- The unit tests were created without the use of hardcoded file separators, so they're platform agnostic.
+- The only files that can be decompressed are .ll, .hh, and .lz files. Otherwise the program will return "This file type not supported"
